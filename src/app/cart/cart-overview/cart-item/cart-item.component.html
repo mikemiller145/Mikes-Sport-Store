@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-sm border-top m-1 p-1">
+        <div class="row">
+            <div class="col-sm-2">
+                <div>
+                    <img [src]="cartItem.productImageUrl" class="img-fluid" alt="Item Image">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h5><a routerLink="/products/{{cartItem.productId}}">{{ cartItem.productName }}</a></h5>
+            </div>
+            <div class="col-sm-3">
+                <p>Qty: </p>
+                <select (change)="handleUpdateQuantity($event)" class="custom-select">
+                    <option [selected]="true">{{ cartItem.qty }}</option>
+                    <option *ngFor="let quantityOption of quantityOptions">
+                        <div *ngIf="cartItem.qty === quantityOption; else elseBlock">
+                            <option [selected]="true">{{ quantityOption }}</option>
+                        </div>
+                        <ng-template #elseBlock>
+                            <option>{{ quantityOption }}</option>
+                        </ng-template>
+                    </option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <p>Price: {{ cartItem.qty }} * {{ cartItem.price | currency:'USD' }} = </p>
+                <strong> {{ (cartItem.qty * cartItem.price) | currency:'USD' }} </strong>
+            </div>
+            <div class="col-sm-1">
+                <button (click)="handleRemoveCartItem()" type="button" class="btn btn-danger rounded-circle">
+                <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+

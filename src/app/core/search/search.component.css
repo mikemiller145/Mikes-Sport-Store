@@ -1,0 +1,37 @@
+button{
+    background-color: rgb(19, 6, 97);
+}
+button:hover{
+    background-color: black;
+    transform: translate(0px, -5px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.30);
+
+}
+
+input{
+    background-color: #e9734b;
+    color: white;
+    border-color: #ffffff;
+    border-width: 1px !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+  .form-control:focus {
+    background-color: #e95e30;
+    color: white;
+    border-color: #ffffff;
+    border-width: 4px !important;
+    box-shadow: none;
+  }
+

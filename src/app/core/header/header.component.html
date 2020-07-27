@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#"><img src="assets/img/Logo(light).png" height="65" alt="Logo"></a>
+    <button (click)="toggleNavbar()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="mynavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse"[ngClass]="{ 'show': navbarOpen }" id="mynavbar">
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/products" routerLinkActive="active-link">Shop</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart">
+              <span class="fa-layers fa-fw fa-2x">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="fa-layers-counter fa-lg" style="background:Tomato">{{ cartQuantity }}</span>
+              </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>

@@ -1,0 +1,30 @@
+
+<div id="border-peach" class="container border p-3 mb-5">
+  <div class="row align-items-center">
+    <div class="col-sm-6">
+      <div class="img-wrapper">
+        <img [src]="productItem.imageUrl" alt="Product Image">
+      </div>
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-5 pl-3">
+      <h2>
+        {{productItem.name}}
+      </h2>
+      <p>{{ productItem.description }}</p>
+      <p>
+        Price: <strong>{{productItem.price | currency:'USD'}}</strong>
+      </p>
+      <div class="m-1">
+        <strong>
+        <button (click)="incrementCounter()" class="btn btn-success" type="button"><i class="fas fa-plus"></i></button>
+        &nbsp;&nbsp;{{ counter }}&nbsp;&nbsp; 
+        <button (click)="decrementCounter()" class="btn btn-danger" type="button"><i class="fas fa-minus"></i></button>
+        </strong>
+      </div>
+      <button (click)="handleAddToCart()" class="btn btn-primary mt-3" type="button"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart</button>
+    </div>
+  </div>
+</div>
+

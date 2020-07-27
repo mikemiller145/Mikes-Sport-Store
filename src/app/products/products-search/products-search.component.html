@@ -1,0 +1,9 @@
+<div id="productOverview" class="container border">
+    <h2 id="title">Search Results: "{{searchValue}}"</h2>
+      <div class="row">
+          <div id="productCard" class="col-sm-5 col-lg-3 border-top" *ngFor="let searchedProduct of searchedProducts">
+              <app-product-item [productItem]="searchedProduct"></app-product-item>
+          </div>
+      </div>
+  </div>
+

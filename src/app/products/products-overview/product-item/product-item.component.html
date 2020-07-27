@@ -1,0 +1,21 @@
+<div id="productInfo">
+        <div class="img-wrapper">
+                <img [src]="productItem.imageUrl" alt="Product Image">
+        </div>
+        <div class="text-center">
+                <h5 class="mt-2">{{ productItem.name }}</h5>
+                <p>{{ productItem.price | currency:'USD' }}</p>
+        </div>
+                <div class="row justify-content-md-center p-1">
+                        <div class="col-12">
+                                <button (click)="handleAddToCart()" class="btn btn-block btn-primary mb-2" type="button"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart</button>
+                        </div>
+                        <div class="col-12">
+                                <button (click)="getProductDetail(productItem)" class="btn btn-block btn-info my-2" type="button"><i class="fas fa-book-open"></i> View Item</button>
+                        </div>
+                </div>
+</div>
+
+
+
+               

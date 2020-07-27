@@ -1,0 +1,15 @@
+
+<div class ="container my-4 mx-auto">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <div class="input-group">
+                <input #newSearch (keyup.enter)="handleSearch(newSearch.value)" class="form-control rounded-pill" placeholder="Search Item...">
+                <div class ="input-group-btn pl-1">
+                    <button (click)="handleSearch(newSearch.value)" class="btn rounded-pill"><i class="fas fa-search" style="color:white"></i></button>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
