@@ -18,7 +18,7 @@ import { ProductsSearchComponent } from './products-search/products-search.compo
     ProductsSearchComponent,
   ],
   exports: [
-    ProductsOverviewComponent
+    ProductsOverviewComponent,
   ],
   imports: [
     CommonModule,

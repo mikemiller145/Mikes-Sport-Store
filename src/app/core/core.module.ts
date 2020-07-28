@@ -11,7 +11,7 @@ import { SearchComponent } from './search/search.component';
   declarations: [
     HeaderComponent,
     FooterComponent,
-    SearchComponent
+    SearchComponent,
   ],
   imports: [
     CommonModule,

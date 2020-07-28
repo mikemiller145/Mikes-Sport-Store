@@ -8,18 +8,20 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CartModule } from './cart/cart.module';
 import { ManageProductsService } from './manage-products.service';
 import { MessengerService } from 'src/app/messenger.service';
+import { HandleproblemsComponent } from './handleproblems/handleproblems.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HandleproblemsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     ProductsModule,
     CoreModule,
     NgbModule,
     CartModule,
+    AppRoutingModule,
   ],
   providers: [
     ManageProductsService,

@@ -19,7 +19,9 @@ export class SearchComponent implements OnInit {
 
   handleSearch(newSearch: string){
     console.log(newSearch);
-    this.router.navigate(['/products/search', newSearch]);
+    if (newSearch) {
+      this.router.navigate(['/products/search', newSearch]);
+  }
   }
 
 }
