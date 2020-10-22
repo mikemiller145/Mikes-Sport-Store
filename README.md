@@ -27,3 +27,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 `npm update` may also need to be ran if errors occur
 
+![image](https://user-images.githubusercontent.com/59183687/96821788-a40b0400-13f6-11eb-9612-2d88d88c2f67.png)
+![image](https://user-images.githubusercontent.com/59183687/96821842-bdac4b80-13f6-11eb-976a-2f43fc2bd881.png)
+![image](https://user-images.githubusercontent.com/59183687/96821893-d288df00-13f6-11eb-9000-84e1d4407f90.png)
